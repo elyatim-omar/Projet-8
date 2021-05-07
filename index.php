@@ -4,7 +4,7 @@
   // Ouverture de la connexion à la base de données
   $dbhost = 'localhost:3306';
   $dbuser = 'root';
-  $dbpass = '';
+  $dbpass = 'solicode123';
   $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
   
 

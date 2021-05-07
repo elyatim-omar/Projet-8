@@ -1,7 +1,7 @@
 <?php
    $dbhost = 'localhost:3306';
    $dbuser = 'root';
-   $dbpass = '';
+   $dbpass = 'solicode123';
    $dbname = 'first';
    
    $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
