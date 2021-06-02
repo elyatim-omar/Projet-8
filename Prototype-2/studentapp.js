@@ -16,18 +16,6 @@ function getall() {
 }
 getall();
 
-//update-btn-on-click
-$("body").on("click",".studentsList .update-btn",function() {
-  $("li").hide();
-  $(".edit-form").show();
-  var index = $(this).parents("li").index();
-  $(".edit-form .studentName").val(studentsList[index]["name"]);
-  $(".edit-form .studentFname").val(studentsList[index]["fathername"]);
-  $(".edit-form .studentRollno").val(studentsList[index]["rollno"]);
-  $(".edit-form .studentDegree").val(studentsList[index]["degree"]);
-  $(".edit-form .studentBranch").val(studentsList[index]["branch"]);
-  $(".edit-form .sid").val(studentsList[index]["id"]);
-});
 
 // save-student-to-database
 $(".save-student").click(function() {
