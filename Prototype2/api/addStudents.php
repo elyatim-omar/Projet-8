@@ -1,5 +1,5 @@
 <?php
-$dbh = new PDO("mysql:host=localhost:3306;dbname=schoolstd","root","solicode123");
+$dbh = new PDO("mysql:host=localhost;dbname=schoolstd","root","solicode123");
 $sql = " INSERT INTO schoolstudents(name,fathername,rollno,degree,branch) VALUES (:name,:fathername,:rollno,:degree,:branch)";
 $addStudentsQuery = $dbh->prepare($sql);
 $addStudentsQuery->bindParam(":name",$_POST["name"],PDO::PARAM_STR);
