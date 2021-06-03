@@ -3,7 +3,7 @@ var studentsList;
 function getall() {
   $(".studentsList").html(" ");
   $.ajax({
-    url:"http://localhost:8080/api/getStudents.php",
+    url:"api/getStudents.php",
     method:"GET",
     success:function(data) {
       studentsList = JSON.parse(data);
@@ -40,7 +40,7 @@ $(".save-student").click(function() {
 
   //send to php file via ajax
   $.ajax({
-    url:"http://localhost:8080/api/editStudents.php",
+    url:"api/editStudents.php",
     method:"POST",
     data:{
       sid : sID,
@@ -64,7 +64,7 @@ $(".submit-student").click(function() {
   var sBranch = $(".studentBranch").val();
 
   $.ajax({
-    url:"http://localhost:8080/api/addStudents.php",
+    url:"api/addStudents.php",
     method:"POST",
     data:{
       name :sName,
@@ -83,7 +83,7 @@ $("body").on("click",".delete-btn",function() {
   $(".studentsList .stdID").val(studentsList[index]["id"]);
   var studentID =$(".studentsList .stdID").val();
   $.ajax({
-    url:"http://localhost:8080/api/deleteStudent.php",
+    url:"api/deleteStudent.php",
     method:"POST",
     data:{
       sid :studentID
