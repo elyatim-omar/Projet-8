@@ -11,22 +11,12 @@ header{
 	margin: 0;
 	padding: 0;
 }
-li{
-	margin:35px;
-	padding:20px;
-	list-style-type: none;
-  border: 1px solid  #abafab;
-	max-width: 300px;
-	float: left;
-	box-shadow: 10px 9px 16px 5px rgba(0, 0, 0, 0.24);
-	background-color: rgba(11, 159, 230, 0.52);
-	text-shadow: 1px 1px 5px rgba(18, 53, 224, 0.43);
-}
+
 .update-btn{
 	padding: 10px;
 	width: 80px;
 	height: 40px;
-	background-color: rgba(42, 42, 212, 0.85);
+	background-color: #1A27C9;
 	color: white;
 	text-align: center;
   font-size: 18px;
@@ -54,7 +44,7 @@ li{
 }
 .heading{
 	text-align: center;
-	background-color:#3399cc;
+	background-color:#1A27C9;
 	width: 100%;
 	height: auto;
 	margin: 0;

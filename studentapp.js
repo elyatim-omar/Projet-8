@@ -9,7 +9,7 @@ function getall() {
       studentsList = JSON.parse(data);
       console.log(studentsList);
       for (var i = 0; i < studentsList.length; i++) {
-        $(".studentsList").append('<li><h2>'+"Name: "+studentsList[i]["name"]+'</h2><h3>'+"FatherName: "+studentsList[i]["fathername"]+'</h3><h4>'+"position: "+studentsList[i]["position"]+'</h4><h5>'+'</h5><h6></li>');
+        $(".studentsList").append('<tr><td>'+""+studentsList[i]["name"]+'</td><td>'+""+studentsList[i]["fathername"]+'</td><td>'+""+studentsList[i]["position"]+'</td><td>'+'</tr>');
       }
     }
   })
