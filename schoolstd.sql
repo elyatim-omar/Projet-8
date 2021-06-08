@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `schoolstudents`
+-- Table structure for table `staff`
 --
 
-CREATE TABLE `schoolstudents` (
+CREATE TABLE `staff` (
   `id` int(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `fathername` varchar(255) NOT NULL,
